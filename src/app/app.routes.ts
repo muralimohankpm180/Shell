@@ -32,5 +32,10 @@ export const routes: Routes = [
         path:'login',
         loadComponent: () => 
             import('remote/Login').then(m => m.LoginComponent)
+    },
+    {
+        path:'cart',
+        loadComponent: () => 
+            import('remote/Cart').then(m => m.CartComponent)
     }
 ];
